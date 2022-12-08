@@ -1,0 +1,322 @@
+/* Imports */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Fredericka+the+Great&family=Lobster&family=Roboto:wght@100&display=swap');
+=
+
+/* The Basics */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trirong", serif;
+  line-height: 1.75em;
+  font-size: 16px;
+  background-color: black;
+  color: #aaa;
+}
+
+p {
+  font-size: 16;
+  color: white;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+  color: #FFF01F;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 25px;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 27px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D8D8D8;
+  border-top: 1px solid #D8D8D8;
+  color: #F554DA;
+}
+
+/* Links, Hovers, Images*/
+a[href] {
+  color: white;
+}
+
+a[href]:hover {
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 18px;
+}
+
+.img1 {
+  max-width: 100%;
+	height: auto;
+  padding: 20px;
+	float: right;
+}
+
+.portfolio-img{
+	max-width: 60%;
+  padding: 20px;
+
+}
+
+li {
+  line-height: 1.5em;
+  color: white;
+  width: 50%;
+  border-width: 0;
+}
+
+/*The Basics Buttons*/
+.button-basics {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 290px;
+  color: white;
+  background-color: #1EA69E;
+  border: 2px solid #E8DE4D;
+}
+
+.button-basics:hover {
+  background-color: #E83565;
+  color: white;
+  text-decoration: none;
+  font-family: 'Fredericka the Great';
+  font-size: 25px;
+}
+
+/* portfolio buttons*/
+.button-portfolio {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 290px;
+  color: white;
+  background-color: #1EA69E;
+  border: 2px solid #E8DE4D;
+}
+
+.button-portfolio:hover {
+  background-color: #E83565;
+  color: white;
+  text-decoration: none;
+  font-family: 'Fredericka the Great';
+  font-size: 25px;
+}
+
+.backButton {
+  background-color: #1EA69E;
+  color: white;
+}
+
+/* Menu Box */
+.menu-box {
+  display: inline-block;
+  justify-content: flex-start;
+}
+
+/* Menu Buttons */
+.box-1 {
+  flex: 1;
+}
+
+.box-2 {
+  flex: 1;
+}
+
+.box-3 {
+  flex: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*responsive start*/
+
+* {
+  box-sizing: border-box;
+}
+
+.block-left {
+  background-color: black;
+  color: white;
+  padding: 60px;
+  float: left;
+  width: 33%;
+}
+
+
+
+
+
+
+/*i frame responsive*/
+.container {
+
+  /* 1:1 Aspect Ratio */
+}
+
+.responsive-iframe {
+
+}
+
+/*Figma Code*/
+.figmaFrame {
+  width: 100%;
+  height: 800px;
+}
+
+/* Unity.html*/
+.unityP {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+
+/* CSS for responsive iframe */
+/* ========================= */
+
+/* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
+#Iframe-Master-CC-and-Rs {
+  max-width: 55%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+/* inner wrapper: make responsive */
+.responsive-wrapper {
+  position: relative;
+  height: 0;    /* gets height from padding-bottom */
+
+  /* put following styles (necessary for overflow and scrolling handling on mobile devices) inline in .responsive-wrapper around iframe because not stable in CSS:
+    -webkit-overflow-scrolling: touch; overflow: auto; */
+
+}
+
+.responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* padding-bottom = h/w as % -- sets aspect ratio */
+/* YouTube video aspect ratio */
+.responsive-wrapper-wxh-572x612 {
+  padding-bottom: 107%;
+}
+
+/* general styles */
+/* ============== */
+
+.set-padding {
+  padding: 10px;
+}
+.set-margin {
+  margin: 10px;
+}
+.center-block-horiz {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+
+
+
+
+
+
+/*Media Queries*/
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+  .menu-box {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .block-left {
+    width: 100%;
+    float: center;
+		padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+	.img2 {
+		float: center;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive-iframe {
+    height: 100%;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+	#Iframe-Master-CC-and-Rs {
+	  max-width: 100%;
+	  max-height: 100%;
+
+	}
+
+  }
+
+
+
+
+/* Desktop*/
+
+@media screen and (min-width: 900px) {
+  .figmaFrame {
+    padding-left: 700px;
+    padding-right: 700px;
+  }
+
+@media screen and (min-width: 900px) {
+  .responsive-iframe {
+    height: 100%;
+		padding-left: 700px;
+    padding-right: 700px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .unityP {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
