@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Unity Project</title>
+    <form class="" action="index.html">
+    <button class="backButton">Back</button>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+
+
+  <body class="ai-body">
+    <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+<center><img class="ai-img" src="ai-logo.png"></img>
+</center>
+
+
+      <h2><center> By: Christina Matthews, Casey O’Brien, Wanlong He, David Cabrera</center></h2>
+
+
+      <h3 style="text-align:center;" class = "ai-h3">TuberBot Presentation</h3>
+
+
+
+
+
+<!-- Completley working slideshow-->
+
+<!--
+<div class="container-slideshow">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/tuberbot/TuberBot1.png" class = "img-slideshow" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/tuberbot/TuberBot2.png" class = "img-slideshow" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/tuberbot/TuberBot3.jpg" class = "img-slideshow" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/ai1.png" class = "img-slideshow" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/ai1.png" class = "img-slideshow" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/ai1.png" class = "img-slideshow" style="width:100%">
+  </div>
+
+  <a class="prev-slideshow" onclick="plusSlides(-1)">❮</a>
+  <a class="next-slideshow"  onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container-slideshow">
+    <p id="caption"></p>
+  </div>
+
+
+  <div class="row-slideshow">
+    <div class="column-slideshow">
+      <img class="demo cursor" src="images/tuberbot/TuberBot1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column-slideshow">
+      <img class="demo cursor" src="images/tuberbot/TuberBot2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column-slideshow">
+      <img class="demo cursor" src="images/tuberbot/TuberBot3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column-slideshow">
+      <img class="demo cursor" src="images/ai1.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column-slideshow">
+      <img class="demo cursor" src="images/ai1.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column-slideshow">
+      <img class="demo cursor" src="images/ai1.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+-->
+<!-- Completley working end -->
+
+<center><iframe src="pdfs/TuberBot.pdf" width="50%" height="650" style="border:1px solid black;" class = "ai-iframe">
+</iframe></center>
+
+
+
+
+
+
+<h3 style="text-align:center;" class = "ai-h3">Figma Prototype</h3>
+
+<center><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FV4CyVRhwW3l3alZJaGQRSY%2FTuberBot---UI%3Fscaling%3Dscale-down%26page-id%3D0%253A1%26node-id%3D33%253A2" allowfullscreen></iframe></center>
+
+<h3 style="text-align:center;" class = "ai-h3">Figjam - AI Logic Flow</h3>
+
+<center><iframe  style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLL56la83qvSxxxDXg7c6c3%2FAI-Logic-Flow%3Fnode-id%3D0%253A1%26t%3DvomvqgJqS9SeAqIf-1" allowfullscreen></iframe></center>
+
+
+<h3 style="text-align:center;" class = "ai-h3">Figjam - User Flow</h3>
+
+<center>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYjQJAt4pnYOxoQ32oc7Byy%2FTuberBot---User-Flow%3Fnode-id%3D0%253A1%26t%3DnM97pAxUdMQot5NP-1" allowfullscreen></iframe></center>
+
+
+<h3 style="text-align:center;" class = "ai-h3">Application Demo</h3>
+
+<center> <iframe width="660" height="515" src="https://www.youtube.com/embed/aGkmkdovVxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+
+
+
+<!-- script -->
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+  </body>
+
+
+
+
+
+
+
+
+
+</html>
