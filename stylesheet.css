@@ -43,10 +43,19 @@ h3 {
   color: #F554DA;
 }
 
+h4.awards{
+  border-style: solid;
+  border-color: #FFA500;
+}
+
 /* Links, Hovers, Images*/
 a[href] {
   color: white;
 }
+
+
+
+
 
 a[href]:hover {
   color: white;
@@ -54,6 +63,9 @@ a[href]:hover {
   font-size: 18px;
 }
 
+.book-button{
+  color: black;
+}
 .img1 {
   max-width: 100%;
 	height: auto;
@@ -72,6 +84,19 @@ li {
   color: white;
   width: 50%;
   border-width: 0;
+}
+
+
+img.awards {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+img.awards:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 /*The Basics Buttons*/
@@ -116,6 +141,24 @@ li {
   border: 2px solid #E8DE4D;
 }
 
+
+/* portfolio buttons*/
+.button-portfolio-book {
+  color: black;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 200px;
+  background-color: #F554DA ;
+  border: 2px solid #1EA69E;
+}
+
 .button-portfolio:hover {
   background-color: #E83565;
   color: white;
@@ -123,6 +166,39 @@ li {
   font-family: 'Fredericka the Great';
   font-size: 25px;
 }
+
+.button-portfolio-book:hover {
+  background-color: #E83565;
+  color: #1EA69E;
+  text-decoration: none;
+  font-family: 'Fredericka the Great';
+  font-size: 25px;
+}
+
+.button-portfolio-awards {
+  color: black;
+  border: none;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 30px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 200px;
+  background-color: none ;
+  border: 2px solid #FFA500;
+}
+
+.button-portfolio-awards:hover {
+  background-color: #E83565;
+  color: white;
+  text-decoration: none;
+  font-family: 'Fredericka the Great';
+  font-size: 25px;
+}
+
 
 .backButton {
   background-color: #1EA69E;
