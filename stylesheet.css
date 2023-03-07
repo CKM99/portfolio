@@ -2,6 +2,36 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Fredericka+the+Great&family=Lobster&family=Roboto:wght@100&display=swap');
 =
+/*toc*/
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+    position: inherit;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+    font-size: 30px;
+
+}
+
+#toc_list li{
+
+  border-style: solid;
+border-color: white;
+}
+
+
 
 /* The Basics */
 * {
@@ -61,6 +91,14 @@ a[href]:hover {
   color: white;
   font-family: 'Fredericka the Great', cursive;
   font-size: 18px;
+
+}
+
+
+a[href].contents:hover {
+  color: white;
+  font-size: 30px;
+
 }
 
 .book-button{
@@ -260,7 +298,7 @@ img.awards:hover {
 /*Figma Code*/
 .figmaFrame {
   width: 100%;
-  height: 800px;
+  height: 500px;
 }
 
 /* Unity.html*/
@@ -385,7 +423,7 @@ img.awards:hover {
 @media screen and (min-width: 900px) {
   .responsive-iframe {
     height: 100%;
-    padding-left: 700px;
+		padding-left: 700px;
     padding-right: 700px;
   }
 }
