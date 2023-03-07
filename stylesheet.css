@@ -378,14 +378,14 @@ img.awards:hover {
 
 @media screen and (min-width: 900px) {
   .figmaFrame {
-    padding-left: 700px;
-    padding-right: 700px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
 
 @media screen and (min-width: 900px) {
   .responsive-iframe {
     height: 100%;
-		padding-left: 700px;
+    padding-left: 700px;
     padding-right: 700px;
   }
 }
