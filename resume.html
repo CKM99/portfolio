@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Christina's References</title>
-    <form class="" action="index.html">
-    <button class="backButton">Back</button>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <meta charset="utf-8">
     <link rel="stylesheet" href="stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Trirong', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-      <style>
-          .iframe-container {
-            max-width: 100%;
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .backButton {
+            display: block;
             margin: 20px auto;
+        }
+
+        .iframe-container {
+            max-width: 100%;
+            margin: 20px;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -29,18 +42,17 @@
         }
 
         /* Additional CSS styles go here */
-        
-      </style>
-  </head>
-  <body>
-  <center>  <h1>My Resume</h1></center>
-
-
-
-  <div class="iframe-container">
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>My Resume</h1>
+    <form class="" action="index.html">
+        <button class="backButton">Back</button>
+    </form>
+</div>
+<div class="iframe-container">
     <iframe loading="lazy" src="ckm-resume.pdf" allowfullscreen="allowfullscreen" allow="fullscreen" height="800"></iframe>
 </div>
-
-
-
+</body>
 </html>
