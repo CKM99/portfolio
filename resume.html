@@ -10,13 +10,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <style>
-   .iframe-container {
-            width: 100%;
-            max-width: 800px;
+          .iframe-container {
+            max-width: 100%;
             margin: 20px auto;
             padding: 20px;
             box-sizing: border-box;
         }
+
+        /* Adjust styles for smaller screens (e.g., iPhones) */
+        @media (max-width: 768px) {
+            .iframe-container {
+                padding: 10px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Additional CSS styles go here */
         
       </style>
   </head>
@@ -25,10 +37,9 @@
 
 
 
-       <div class="iframe-container">
-        <iframe loading="lazy" src="ckm-resume.pdf" allowfullscreen="allowfullscreen"
-            allow="fullscreen" height="800"></iframe>
-    </div>
+  <div class="iframe-container">
+    <iframe loading="lazy" src="ckm-resume.pdf" allowfullscreen="allowfullscreen" allow="fullscreen" height="800"></iframe>
+</div>
 
 
 
