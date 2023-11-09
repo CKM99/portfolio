@@ -32,6 +32,12 @@
             border: none;
         }
 
+            .pdf-container {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* 1:1 Aspect Ratio */
+        }
+
         /* Adjust styles for smaller screens (e.g., iPhones) */
         @media (max-width: 768px) {
             .iframe-container {
@@ -53,8 +59,8 @@
         <button class="backButton">Back</button>
     </form>
 </div>
-<div class="iframe-container">
-    <iframe loading="lazy" src="ckm-resume.pdf" allowfullscreen="allowfullscreen" allow="fullscreen" height="800"></iframe>
+<div class="pdf-container">
+    <iframe class="pdf-iframe" loading="lazy" src="ckm-resume.pdf" allowfullscreen="allowfullscreen" allow="fullscreen" height="800"></iframe>
 </div>
 </body>
 </html>
