@@ -25,6 +25,9 @@
 
 }
 
+html{
+padding: 50px;
+}
 #toc_list li{
 
   border-style: solid;
